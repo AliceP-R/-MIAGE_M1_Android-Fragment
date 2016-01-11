@@ -16,6 +16,6 @@ public class PremierFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.deuxieme_layout, container, false);
+        return inflater.inflate(R.layout.premier_frag_layout, container, false);
     }
 }

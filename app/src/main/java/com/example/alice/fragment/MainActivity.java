@@ -29,6 +29,14 @@ public class MainActivity extends Activity {
 
     public void onClickButton(View v)
     {
-
+        DeuxiemeFragment frag2 = new DeuxiemeFragment();
+        // FragmentTransaction permet d'ajouter ou d'enlever des fragments d'une vue.
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        // on ajoute un PremierFrag dans le FrameLayout du main
+        transaction.replace(R.id.FrameL, frag2);
+        // optionnel : sauvegarde dans le backstack l'ajout du frag1
+        transaction.addToBackStack(null);
+        // obligatoire : si on ne commit pas, il ne se passe rien
+        transaction.commit();
     }
 }
